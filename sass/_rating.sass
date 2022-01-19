@@ -1,0 +1,121 @@
+.rating
+  padding-bottom: 50px
+  background-color: #F4F4F4
+  &__inner
+  &__bottom
+    position: relative
+  &__top
+    padding-top: 51px
+    margin-bottom: 40px
+    display: flex
+    flex-direction: column
+  &__header
+    font-size: 40px
+    text-transform: uppercase
+    @media (max-width: 1024px)
+      font-size: 34px
+    @media (max-width: 768px)
+      font-size: 28px
+    @media (max-width: 600px)
+      font-size: 22px
+  .rating__swiper
+    width: 100%
+    height: 515px
+    overflow: hidden
+    @media (max-width: 768px)
+      height: 430px
+  .swiper-slide
+    padding: 35px 65px 45px
+    width: 32%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    @media (max-width: 1024px)
+      padding: 35px 20px 25px
+    &.slide__white
+      padding: 35px 34px 82px
+      background-color: white
+      .rating__suptitle
+        color: black
+        margin-bottom: 46px
+      .rating__icon
+        width: 100%
+      .rating__photo
+        width: 100%
+        margin-bottom: 58px
+        @media (max-width: 1024px)
+          margin-bottom: 90px
+      .rating__subtitle
+        color: black
+    &.slide__black
+      padding: 35px 22px 102px
+      background-color: black
+  .swiper-button-next
+    position: absolute
+    top: 50%
+    right: -60px
+    color: black
+    @media (max-width: 1024px)
+      right: -35px
+    @media (max-width: 600px)
+      display: none
+  .swiper-button-prev
+    position: absolute
+    top: 50%
+    left: -60px
+    color: black
+    @media (max-width: 1024px)
+      left: -35px
+    @media (max-width: 1024px)
+      display: none
+  &__photo
+    width: 100%
+  &__img
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+  &__suptitle
+    margin-bottom: 115px
+    position: relative
+    z-index: 2
+    font-size: 14px
+    font-weight: 700
+    color: white
+    text-transform: uppercase
+    @media (max-width: 768px)
+      font-size: 10px
+      margin-bottom: 110px
+  &__number
+    margin-bottom: 63px
+    position: relative
+    z-index: 2
+    font-size: 100px
+    font-weight: 700
+    color: white
+    @media (max-width: 768px)
+      font-size: 80px
+      margin-bottom: 35px
+  &__year
+    margin-bottom: 30px
+    position: relative
+    z-index: 2
+    font-size: 24px
+    font-weight: 700
+    line-height: 1.16
+    color: white
+    @media (max-width: 768px)
+      font-size: 18px
+  &__subtitle
+    position: relative
+    z-index: 2
+    color: white
+    font-size: 24px
+    font-weight: 700
+    line-height: 1.16
+    text-align: center
+    @media (max-width: 768px)
+      font-size: 18px

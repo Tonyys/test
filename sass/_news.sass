@@ -1,0 +1,336 @@
+.news
+  &__inner
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__item
+    margin-bottom: 35px
+    width: 23%
+    display: flex
+    flex-direction: column
+    position: relative
+    border-bottom: 1px solid rgba(0,0,0,.1)
+    @media (max-width: 1024px)
+      width: 47%
+    @media (max-width: 600px)
+      width: 100%
+      margin-bottom: 25px
+    &.card__standart
+      .news__photo
+        padding: 215px 0 0 15px
+      .news__img
+        @media (max-width: 1640px)
+          height: 65%
+      .news__suptitle
+        @media (max-width: 768px)
+          font-size: 10px
+      .news__title
+        @media (max-width: 1640px)
+          margin-top: 42px
+          font-size: 18px
+        @media (max-width: 768px)
+          font-size: 16px
+        @media (max-width: 600px)
+          font-size: 14px
+    &.card__gradient
+      border: 0
+      .news__img
+        width: 100%
+        height: 100%
+      .news__suptitle
+        max-width: 108px
+        margin: 25px 0 105px 15px
+        background-color: white
+        color: black
+        @media (max-width: 768px)
+          font-size: 10px
+      .news__title
+        color: white
+        font-size: 20px
+        font-weight: 500
+        margin: -15px 0 25px 15px
+        @media (max-width: 768px)
+          max-width: 210px
+          font-size: 16px
+    &.card__color
+      align-items: start
+      border: 0
+      .news__img
+        width: 100%
+        height: 100%
+      .news__suptitle
+        margin: 20px 0 105px 15px
+        background-color: white
+        color: black
+        @media (max-width: 768px)
+          font-size: 10px
+      .news__title
+        max-width: 240px
+        margin: 0 0 10px 15px
+        color: white
+        @media (max-width: 1024px)
+          font-size: 18px
+        @media (max-width: 768px)
+          font-size: 16px
+        @media (max-width: 600px)
+          font-size: 14px
+      .news__data
+        margin-bottom: 10px
+        margin-left: 15px
+        color: white
+        opacity: .5
+    &.card__small
+      .news__photo
+        padding-top: 95px
+        @media (max-width: 768px)
+          padding-top: 70px
+      .news__img
+        height: 48%
+      .news__suptitle
+        margin-top: 95px
+        @media (max-width: 768px)
+          font-size: 10px
+      .news__title
+        margin-bottom: 10px
+        font-size: 20px
+        @media (max-width: 1640px)
+          font-size: 18px
+        @media (max-width: 768px)
+          font-size: 16px
+        @media (max-width: 600px)
+          font-size: 14px
+      .news__data
+        margin-top: auto
+        margin-bottom: 10px
+    &.card__big
+      padding: 40px 25px 10px 288px
+      border: 0
+      width: 49%
+      @media (max-width: 1640px)
+        padding: 40px 25px 10px 245px
+      @media (max-width: 1024px)
+        padding: 40px 25px 10px 405px
+        width: 100%
+      @media (max-width: 768px)
+        padding: 60px 25px 20px 255px
+      @media (max-width: 600px)
+        padding: 5px 25px 20px 10px
+      .news__img
+        width: 69%
+        height: 100%
+        top: auto
+        bottom: 0
+        @media (max-width: 600px)
+          display: none
+      .news__title
+        max-width: none
+        margin: 0 0 32px 0
+        font-size: 25px
+        font-weight: 700
+        @media (max-width: 1640px)
+          font-size: 20px
+        @media (max-width: 600px)
+          font-size: 16px
+      .news__subtitle
+        margin-bottom: 97px
+        max-width: 307px
+        font-size: 18px
+        @media (max-width: 1640px)
+          font-size: 16px
+        @media (max-width: 768px)
+          margin-bottom: 45px
+        @media (max-width: 600px)
+          margin-bottom: 40px
+          font-size: 10px
+      .news__person
+        margin-top: auto
+        display: flex
+        flex-direction: column
+        align-items: end
+        text-align: end
+        position: relative
+        z-index: 2
+      .news__name
+        margin-bottom: 6px
+        color: white
+        font-size: 16px
+        font-weight: 700
+        @media (max-width: 600px)
+          font-size: 10px
+      .news__position
+        max-width: 150px
+        font-size: 14px
+        font-weight: 500
+        color: white
+        opacity: .75
+        @media (max-width: 600px)
+          font-size: 8px
+      .news__bg
+        position: absolute
+        z-index: -1
+        top: -85px
+        left: 196px
+        font-size: 300px
+        font-weight: 700
+        color: #F0F0F0
+        @media (max-width: 600px)
+          left: 80px
+      &:after
+        content: ''
+        width: 100%
+        height: 33%
+        background-color: black
+        position: absolute
+        bottom: 0
+        left: 0
+        @media (max-width: 600px)
+          height: 70px
+      &:before
+        content: ''
+        width: 34%
+        height: 72%
+        background-color: black
+        position: absolute
+        bottom: 0
+        left: 0
+        @media (max-width: 1640px)
+          height: 60%
+        @media (max-width: 600px)
+          display: none
+    &.card__black
+      padding: 25px 30px
+      display: flex
+      align-items: center
+      background-color: black
+      .news__suptitle
+        margin-bottom: 72px
+        @media (max-width: 768px)
+          font-size: 10px
+        @media (max-width: 600px)
+          margin-bottom: 40px
+      .news__sign
+        margin-bottom: 20px
+      .news__title
+        margin: 0 0 50px 0
+        text-align: center
+        color: white
+        font-size: 20px
+        line-height: 1.1
+        @media (max-width: 1640px)
+          font-size: 18px
+        @media (max-width: 768px)
+          font-size: 14px
+      .news__author
+        margin-top: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+      .news__name
+        margin-top: 8px
+        color: white
+        font-size: 14px
+        font-weight: 500
+    &.card__text
+      align-items: start
+      .news__suptitle
+        margin-bottom: 10px
+        color: white
+        background-color: black
+        @media (max-width: 768px)
+          font-size: 10px
+      .news__title
+        margin: 0 0 15px 0
+        @media (max-width: 1640px)
+          font-size: 18px
+        @media (max-width: 768px)
+          font-size: 16px
+        @media (max-width: 600px)
+          font-size: 14px
+      .news__subtitle
+        margin-bottom: 10px
+        font-size: 16px
+        font-weight: 400
+        @media (max-width: 1640px)
+          font-size: 15px
+        @media (max-width: 600px)
+          font-size: 12px
+      .news__data
+        margin-bottom: 10px
+        margin-top: auto
+    &.card__market
+      .news__img
+        position: relative
+        width: 100%
+        object-fit: contain
+      border: 0
+    &.card__grand
+      padding: 20px 0 0 15px
+      border: 0
+      width: 49%
+      align-items: start
+      @media (max-width: 1024px)
+        width: 100%
+      .news__img
+        height: 100%
+        width: 100%
+      .news__suptitle
+        margin: 0 0 211px 0
+        background-color: white
+        color: black
+        @media (max-width: 1024px)
+          margin: 0 0 150px 0
+      .news__subtitle
+        margin-bottom: 75px
+        max-width: 424px
+        position: relative
+        z-index: 2
+        color: white
+        font-size: 24px
+        font-weight: 700
+        @media (max-width: 768px)
+          margin-bottom: 40px
+        @media (max-width: 600px)
+          font-size: 18px
+  &__photo
+  &__img
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+  &__suptitle
+    margin-bottom: 36px
+    padding: 5px 15px
+    font-size: 14px
+    font-weight: 700
+    background-color: black
+    color: white
+    text-transform: uppercase
+    position: relative
+    z-index: 2
+  &__title
+    max-width: 294px
+    margin-top: 32px
+    margin-bottom: 15px
+    font-size: 20px
+    font-weight: 500
+    line-height: 1.2
+    position: relative
+    top: 0
+    left: 0
+    z-index: 2
+  &__data
+    margin-top: auto
+    margin-bottom: 10px
+    font-size: 14px
+    font-weight: 400
+    opacity: .5
+    z-index: 2
+  &__number
+    margin-left: 10px
+    color: white
+    font-size: 100px
+    font-weight: 700
+    position: relative
+    z-index: 2
+

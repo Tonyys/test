@@ -1,0 +1,56 @@
+@import 'header'
+@import 'intro'
+@import 'news'
+@import 'materials'
+@import 'subscribe'
+@import 'rating'
+@import 'ukraine'
+@import 'popular'
+@import 'country'
+@import 'focus'
+@import 'market'
+@import 'footer'
+
+body
+  &.active
+    overflow: hidden
+*
+  font-family: 'cera pro'
+  font-size: 20px
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+img
+  display: block
+  object-fit: cover
+
+.container
+  padding: 0 80px
+  margin: 0 auto
+  max-width: 1435px
+  width: 100%
+  @media (max-width: 1024px)
+    padding: 0 40px
+
+$laptop: 1640px
+$tabletL: 1024px
+$tablet: 768px
+$mobile: 600px
+
+@mixin laptop
+  @media (max-width: $laptop)
+    @content
+
+@mixin tabletL
+  @media (max-width: $tabletL)
+    @content
+
+@mixin tablet
+  @media (max-width: $tablet)
+    @content
+
+@mixin mobile
+  @media (max-width: $mobile)
+    @content
+
+

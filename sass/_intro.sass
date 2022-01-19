@@ -1,0 +1,169 @@
+.intro
+  padding: 120px 0 506px 0
+  @media (max-width: 1024px)
+    padding: 120px 0 416px 0
+  @media (max-width: 768px)
+    padding: 120px 0 330px 0
+  @media (max-width: 600px)
+    padding: 100px 0 190px 0
+  &__inner
+    display: flex
+    flex-direction: column
+  &__head
+    margin-bottom: 25px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    @media (max-width: 600px)
+      margin-bottom: 20px
+  &__tab
+    width: 23%
+    padding: 10px 20px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    cursor: pointer
+    background-image: url("../img/intro/tab-1.png")
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    z-index: 1
+    @media (max-width: 1024px)
+      width: 47%
+      margin-bottom: 15px
+      padding: 10px 5px
+    @media (max-width: 600px)
+      width: 100%
+      height: 40px
+    &.active
+      .intro__line
+        animation : progress 5s linear forwards
+      &:after
+        animation : progress 5s linear forwards
+    &:after
+      content: ''
+      background-color: rgba(0,0,0,0.5)
+      width: 100%
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+      z-index: 2
+      transform-origin: left
+    &:nth-child(2)
+      background-image: url("../img/intro/tab-2.png")
+    &:nth-child(3)
+      background-image: url("../img/intro/tab-3.png")
+    &:nth-child(4)
+      background-image: url("../img/intro/tab-4.png")
+  &__header
+    display: inline-block
+    color: white
+    font-size: 16px
+    font-weight: 700
+    text-align: center
+    position: relative
+    z-index: 3
+    @media (max-width: 1640px)
+      font-size: 14px
+    @media (max-width: 1024px)
+      font-size: 16px
+    @media (max-width: 768px)
+      font-size: 14px
+    @media (max-width: 600px)
+      font-size: 12px
+  &__line
+    width: 100%
+    height: 2px
+    background-color: #ED3237
+    position: absolute
+    bottom: 0
+    left: 0
+    z-index: 4
+    transform: scaleX(0)
+    transform-origin: left
+  &__body
+    display: flex
+    flex-direction: column
+    max-width: 1274px
+    width: 100%
+    position: relative
+  &__content
+    width: 100%
+    padding: 25px 0 155px 17px
+    display: flex
+    flex-direction: column
+    background-size: cover
+    opacity: 0
+    overflow: hidden
+    visibility: hidden
+    transition-duration: 1s
+    position: absolute
+    z-index: 1
+    @media (max-width: 1024px)
+      padding: 25px 0 80px 17px
+    @media (max-width: 600px)
+      padding: 25px 0 0 17px
+      margin-bottom: 0
+    &.active
+      opacity: 1
+      overflow: visible
+      visibility: visible
+      z-index: 2
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    position: absolute
+    z-index: 1
+    left: 0
+    top: 0
+  &__suptitle
+    position: relative
+    z-index: 2
+    margin-bottom: 20px
+    max-width: 120px
+    text-align: center
+    text-transform: uppercase
+    color: black
+    font-size: 14px
+    font-weight: 700
+    background-color: #fff
+    @media (max-width: 600px)
+      font-size: 10px
+  &__title
+    position: relative
+    z-index: 2
+    margin-bottom: 30px
+    max-width: 608px
+    font-size: 36px
+    font-weight: 700
+    line-height: 1.1
+    color: white
+    @media (max-width: 1024px)
+      margin-bottom: 70px
+      font-size: 28px
+    @media (max-width: 768px)
+      font-size: 18px
+    @media (max-width: 768px)
+      font-size: 16px
+      margin-bottom: 40px
+  &__subtitle
+    position: relative
+    z-index: 2
+    max-width: 532px
+    font-size: 20px
+    font-weight: 400
+    line-height: 1.2
+    color: white
+    @media (max-width: 1024px)
+      font-size: 18px
+    @media (max-width: 768px)
+      font-size: 16px
+    @media (max-width: 600px)
+      display: none
+@keyframes progress
+  from
+    transform: scaleX(0)
+  to
+    transform: scaleX(1)
