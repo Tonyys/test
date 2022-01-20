@@ -2,11 +2,13 @@
 const btnBurger = document.querySelector('.burger')
 const burgerTarget = document.querySelector('.mobile')
 const body = document.querySelector('body')
+const header = document.querySelector('.header')
 
 btnBurger.addEventListener('click', () => {
 	btnBurger.classList.toggle('active')
 	burgerTarget.classList.toggle('active')
 	body.classList.toggle('active')
+	header.classList.toggle('active')
 })
 // lang choose
 const lang = document.querySelectorAll('.header__choose')
