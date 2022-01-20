@@ -43,6 +43,9 @@
     font-size: 18px
     font-weight: 500
     text-transform: uppercase
+    transition-duration: .5s
+    &:hover
+      opacity: .7
     @media (max-width: 1024px)
       font-size: 14px
   &__right
@@ -62,6 +65,8 @@
       font-weight: 700
       text-transform: uppercase
       transition-duration: .5s
+      &:hover
+        color: #ED3237
       @media (max-width: 1024px)
         font-size: 16px
       &.active
@@ -205,8 +210,6 @@
       font-size: 22px
       font-weight: 700
       text-transform: uppercase
-      &:hover
-        opacity: .7
       @media (max-width: 600px)
         font-size: 18px
     &__materials
