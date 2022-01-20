@@ -152,6 +152,7 @@ const swiperPopular = new Swiper('.popular__swiper', {
 //swiper Focus
 const swiperFocus = new Swiper('.focus__swiper', {
 	loop: true,
+	spaceBetween: 25,
 	autoplay: {
 		delay: 2000,
 	},
