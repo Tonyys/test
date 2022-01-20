@@ -122,14 +122,12 @@
         font-size: 16px
         color: black
   .burger
-    display: none
+    display: flex
     margin-right: 15px
     width: 30px
     height: 20px
     cursor: pointer
     position: relative
-    @media (max-width: 768px)
-      display: flex
     &.active
       .burger__item
         width: 24px
@@ -140,9 +138,10 @@
         &:nth-child(3)
          transform: rotate(-45deg)
     &__item
-      background-color: black
       width: 30px
       height: 3px
+      background-color: black
+      font-size: 0
       transition-duration: .5s
       transform-origin: left
       &:nth-child(1)

@@ -6,11 +6,14 @@
     align-items: start
   &__logo
     width: 100%
+    max-width: 185px
     height: 100%
     margin-bottom: 32px
-  &__icon
     @media (max-width: 600px)
-      width: 40%
+      max-width: 100px
+  &__icon
+    width: 100%
+    height: 100%
   &__top
     width: 100%
     margin-bottom: 20px
@@ -64,6 +67,7 @@
       height: 40%
   &__img
     width: 30%
+    height: 100%
     filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.16))
     @media (max-width: 1640px)
       margin-right: 0
