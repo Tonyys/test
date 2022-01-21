@@ -22,21 +22,21 @@
             </div>
             <a href="#"><img src="img/logo.png" alt="logo" class="header__logo"></a>
         </div>
-        <div class="header__nav">
-            <li><a href="#" class="header__link">Категории</a></li>
-            <li><a href="#" class="header__link">Спецтема</a></li>
-            <li><a href="#" class="header__link">Рейтинги</a></li>
-            <li><a href="#" class="header__link">Подписка</a></li>
-        </div>
+        <ul class="header__nav">
+            <li class="header__list"><a href="#" class="header__link">Категории</a></li>
+            <li class="header__list"><a href="#" class="header__link">Спецтема</a></li>
+            <li class="header__list"><a href="#" class="header__link">Рейтинги</a></li>
+            <li class="header__list"><a href="#" class="header__link">Подписка</a></li>
+        </ul>
         <div class="header__right">
-            <a href="#"><span class="header__choose">Ua</span></a>
-            <a href="#"><span class="header__choose">Ru</span></a>
+            <a class="header__lang" href="#"><span class="header__choose">Ua</span></a>
+            <a class="header__lang" href="#"><span class="header__choose">Ru</span></a>
         </div>
     </div>
     <div class="mobile">
         <div class="mobile__nav">
-            <div class="mobile__section">
-                <span>Разделы</span>
+            <span class="mobile__section">Разделы</span>
+            <ul class="mobile__content">
                 <li><a href="#" class="mobile__link">Все новости</a></li>
                 <li><a href="#" class="mobile__link">Политика</a></li>
                 <li><a href="#" class="mobile__link">Украина</a></li>
@@ -48,14 +48,14 @@
                 <li><a href="#" class="mobile__link">Военный фокус</a></li>
                 <li><a href="#" class="mobile__link">Спорт</a></li>
                 <li><a href="#" class="mobile__link">Культура</a></li>
-            </div>
-            <div class="mobile__materials">
-                <span>Материалы</span>
+            </ul>
+            <span class="mobile__section">Материалы</span>
+            <ul class="mobile__content">
                 <li><a href="#" class="mobile__link">Категории</a></li>
                 <li><a href="#" class="mobile__link">Спецтема</a></li>
                 <li><a href="#" class="mobile__link">Рейтинги</a></li>
                 <li><a href="#" class="mobile__link">Подписка</a></li>
-            </div>
+            </ul>
         </div>
     </div>
     <div class="header__search">
@@ -63,10 +63,10 @@
             <img src="img/search.svg" alt="search">
         </a>
     </div>
-    <div class="header__input">
-        <input id="inpsearch" type="text" placeholder="Что ищем?">
+    <label class="header__form">
+        <input class="header__input" type="search" placeholder="Что ищем?">
         <a href="#" class="header__btn-search">Поиск</a>
-    </div>
+    </label>
 </header>
 
 <main class="main">
@@ -76,23 +76,21 @@
             <div class="intro__inner">
                 <div class="intro__head">
                     <div class="intro__tab active">
-                        <h2 class="intro__header">Леди в законе. Особый статус для жены президетна</h2>
-                        <div class="intro__line"></div>
+                        <span class="intro__header">Леди в законе. Особый статус для жены президетна</span>
+                        <div class="intro__line">line</div>
                     </div>
                     <div class="intro__tab">
-                        <h2 class="intro__header">Взрыв на Позняках
-                            в Киеве</h2>
-                        <div class="intro__line"></div>
+                        <span class="intro__header">Взрыв на Позняках в Киеве</span>
+                        <div class="intro__line">line</div>
                     </div>
                     <div class="intro__tab">
-                        <h2 class="intro__header">Потоп на западной Украине</h2>
-                        <div class="intro__line"></div>
+                        <span class="intro__header">Потоп на западной Украине</span>
+                        <div class="intro__line">line</div>
 
                     </div>
                     <div class="intro__tab">
-                        <h2 class="intro__header">Цифровая трансформация бизнеса Украины</h2>
-                        <div class="intro__line"></div>
-
+                        <span class="intro__header">Цифровая трансформация бизнеса Украины</span>
+                        <div class="intro__line">line</div>
                     </div>
                 </div>
                 <div class="intro__body">
@@ -100,25 +98,25 @@
                         <img src="img/intro/content.png" alt="background" class="intro__img">
                         <span class="intro__suptitle">Политика</span>
                         <h1 class="intro__title">Леди в законе. Зачем Зеленскому понадобился особый статус для жены президента</h1>
-                        <h2 class="intro__subtitle">Владимир Зеленский загорелся идеей разработки закона о первой леди. Для чего ему это понадобилось, и какие права и обязанности возлагаются на супругу главы государства в Украине </h2>
+                        <p class="intro__subtitle">Владимир Зеленский загорелся идеей разработки закона о первой леди. Для чего ему это понадобилось, и какие права и обязанности возлагаются на супругу главы государства в Украине </p>
                     </div>
                     <div class="intro__content">
                         <img src="img/intro/20671261_2522.jpg" alt="background" class="intro__img">
                         <span class="intro__suptitle">Политика</span>
                         <h1 class="intro__title">Леди в законе. Зачем Зеленскому понадобился особый статус для жены президента</h1>
-                        <h2 class="intro__subtitle">Владимир Зеленский загорелся идеей разработки закона о первой леди. Для чего ему это понадобилось, и какие права и обязанности возлагаются на супругу главы государства в Украине </h2>
+                        <p class="intro__subtitle">Владимир Зеленский загорелся идеей разработки закона о первой леди. Для чего ему это понадобилось, и какие права и обязанности возлагаются на супругу главы государства в Украине </p>
                     </div>
                     <div class="intro__content">
                         <img src="img/intro/content.png" alt="background" class="intro__img">
                         <span class="intro__suptitle">Политика</span>
                         <h1 class="intro__title">Леди в законе. Зачем Зеленскому понадобился особый статус для жены президента</h1>
-                        <h2 class="intro__subtitle">Владимир Зеленский загорелся идеей разработки закона о первой леди. Для чего ему это понадобилось, и какие права и обязанности возлагаются на супругу главы государства в Украине </h3>
+                        <p class="intro__subtitle">Владимир Зеленский загорелся идеей разработки закона о первой леди. Для чего ему это понадобилось, и какие права и обязанности возлагаются на супругу главы государства в Украине </p>
                     </div>
                     <div class="intro__content">
                         <img src="img/intro/20671261_2522.jpg" alt="background" class="intro__img">
                         <span class="intro__suptitle">Политика</span>
                         <h1 class="intro__title">Леди в законе. Зачем Зеленскому понадобился особый статус для жены президента</h1>
-                        <h2 class="intro__subtitle">Владимир Зеленский загорелся идеей разработки закона о первой леди. Для чего ему это понадобилось, и какие права и обязанности возлагаются на супругу главы государства в Украине </h2>
+                        <p class="intro__subtitle">Владимир Зеленский загорелся идеей разработки закона о первой леди. Для чего ему это понадобилось, и какие права и обязанности возлагаются на супругу главы государства в Украине </p>
                     </div>
                 </div>
             </div>
@@ -148,8 +146,7 @@
                     <img src="img/news/new-3.png" alt="card_photo" class="news__img">
                     <span class="news__suptitle">Рейтинг</span>
                     <span class="news__number">100</span>
-                    <h3 class="news__title">Из песни слов не выкинешь. Рейтинг Фокуса:
-                        самые успешные звезды шоу-бизнеса</h3>
+                    <h3 class="news__title">Из песни слов не выкинешь. Рейтинг Фокуса: самые успешные звезды шоу-бизнеса</h3>
                 </div>
                 <div class="news__item card__standart">
                     <div class="news__photo">
@@ -197,37 +194,37 @@
                 <img src="img/materials/bg.png" alt="background" class="materials__bg">
                 <div class="materials__left">
                     <h2 class="materials__title">Потоп на западной Украине</h2>
-                    <a class="materials__btn" href="#">смотреть все материалы</a>
+                    <a class="materials__btn" href="#">Смотреть все материалы</a>
                 </div>
                 <div class="materials__right">
                     <div class="materials__item">
                         <div class="materials__line">line</div>
-                        <p class="materials__text">Появилось видео затопленного Галича с воздуха</p>
+                        <h3 class="materials__text">Появилось видео затопленного Галича с воздуха</h3>
                         <span class="materials__data">14:26</span>
                     </div>
                     <div class="materials__item">
                         <div class="materials__line">line</div>
-                        <p class="materials__text">Ущерб от наводнения на Закарпатье оценили в 125 млн гривен</p>
+                        <h3 class="materials__text">Ущерб от наводнения на Закарпатье оценили в 125 млн гривен</h3>
                         <span class="materials__data">17:10</span>
                     </div>
                     <div class="materials__item">
                         <div class="materials__line">line</div>
-                        <p class="materials__text">Появилось видео затопленного Галича с воздуха</p>
+                        <h3 class="materials__text">Появилось видео затопленного Галича с воздуха</h3>
                         <span class="materials__data">14:26</span>
                     </div>
                     <div class="materials__item">
                         <div class="materials__line">line</div>
-                        <p class="materials__text">Ущерб от наводнения на Закарпатье оценили в 125 млн гривен</p>
+                        <h3 class="materials__text">Ущерб от наводнения на Закарпатье оценили в 125 млн гривен</h3>
                         <span class="materials__data">17:10</span>
                     </div>
                     <div class="materials__item">
                         <div class="materials__line">line</div>
-                        <p class="materials__text">Появилось видео затопленного Галича с воздуха</p>
+                        <h3 class="materials__text">Появилось видео затопленного Галича с воздуха</h3>
                         <span class="materials__data">14:26</span>
                     </div>
                     <div class="materials__item">
                         <div class="materials__line">line</div>
-                        <p class="materials__text">Ущерб от наводнения на Закарпатье оценили в 125 млн гривен</p>
+                        <h3 class="materials__text">Ущерб от наводнения на Закарпатье оценили в 125 млн гривен</h3>
                         <span class="materials__data">17:10</span>
                     </div>
                 </div>
@@ -242,7 +239,7 @@
                     <img src="img/news/person.png" alt="card_photo" class="news__img">
                     <span class="news__bg">“</span>
                     <h3 class="news__title">Как Юлия Тимошенко меня в Египет отправила</h3>
-                    <h4 class="news__subtitle">В середине нулевых Киев переживал немыслимый ипотечный бум. Банки выдавали кредиты на десять и двадцать лет. </h4>
+                    <p class="news__subtitle">В середине нулевых Киев переживал немыслимый ипотечный бум. Банки выдавали кредиты на десять и двадцать лет. </p>
                     <div class="news__person">
                         <span class="news__name">Алексей Газубей</span>
                         <span class="news__position">Главний редактор focus.ua</span>
@@ -301,19 +298,19 @@
             <div class="subscribe__inner">
                 <div class="subscribe__left">
                     <div class="subscribe__photo">
-                        <img src="img/subscribe/img-1.png" alt="photo" class="subscribe__item">
+                        <a href="#"><img src="img/subscribe/img-1.png" alt="photo" class="subscribe__item"></a>
                     </div>
                     <div class="subscribe__photo">
-                        <img src="img/subscribe/img-2.png" alt="photo" class="subscribe__item">
+                        <a href="#"><img src="img/subscribe/img-2.png" alt="photo" class="subscribe__item"></a>
                     </div>
                     <div class="subscribe__photo">
-                        <img src="img/subscribe/img-3.png" alt="photo" class="subscribe__item">
+                        <a href="#"><img src="img/subscribe/img-3.png" alt="photo" class="subscribe__item"></a>
                     </div>
                     <div class="subscribe__photo">
-                        <img src="img/subscribe/img-4.png" alt="photo" class="subscribe__item">
+                        <a href="#"><img src="img/subscribe/img-4.png" alt="photo" class="subscribe__item"></a>
                     </div>
                     <div class="subscribe__photo">
-                        <img src="img/subscribe/img-5.png" alt="photo" class="subscribe__item">
+                        <a href="#"><img src="img/subscribe/img-5.png" alt="photo" class="subscribe__item"></a>
                     </div>
                 </div>
                 <div class="subscribe__right">
@@ -340,20 +337,20 @@
                                 <img src="img/rating/img-1.png" alt="background" class="rating__img">
                                 <span class="rating__suptitle">Рейтинг</span>
                                 <span class="rating__number">100</span>
-                                <span class="rating__year">Рейтинг 2019</span>
-                                <span class="rating__subtitle">Самые влиятельные украинцы</span>
+                                <h3 class="rating__year">Рейтинг 2019</h3>
+                                <p class="rating__subtitle">Самые влиятельные украинцы</p>
                             </div>
                             <div class="swiper-slide slide__white">
                                 <span class="rating__suptitle">Рейтинг</span>
                                 <div class="rating__icon">
                                     <img src="img/rating/img-2.png" alt="photo" class="rating__photo">
                                 </div>
-                                <span class="rating__subtitle">Бунт кнопок. 30 лучших работодателей Украины — рейтинг Фокуса</span>
+                                <h3 class="rating__subtitle">Бунт кнопок. 30 лучших работодателей Украины — рейтинг Фокуса</h3>
                             </div>
                             <div class="swiper-slide slide__black">
                                 <span class="rating__suptitle">Рейтинг</span>
                                 <span class="rating__number">100</span>
-                                <span class="rating__subtitle">Самые богатые люди Украины. Полный список</span>
+                                <h3 class="rating__subtitle">Самые богатые люди Украины. Полный список</h3>
                             </div>
                         </div>
                     </div>
@@ -374,7 +371,7 @@
                     <div class="news__item card__standart">
                         <div class="news__photo">
                             <img src="img/ukraine/img-1.png" alt="card__photo" class="news__img">
-                            <span class="news__suptitle">УКраина</span>
+                            <span class="news__suptitle">Украина</span>
                         </div>
                         <h3 class="news__title">Проверка доверия: владелец «Три Н» Максим Криппа о махинациях в благотворительности</h3>
                         <span class="news__data">15:44</span>
@@ -382,7 +379,7 @@
                     <div class="news__item card__standart">
                         <div class="news__photo">
                             <img src="img/ukraine/img-2.png" alt="card__photo" class="news__img">
-                            <span class="news__suptitle">УКраина</span>
+                            <span class="news__suptitle">Украина</span>
                         </div>
                         <h3 class="news__title">Выход из карантина: Кабмин разрешил открыть кинотеатры со 2 июля</h3>
                         <span class="news__data">15:44</span>
@@ -390,12 +387,12 @@
                     <div class="news__item card__grand">
                         <img src="img/ukraine/img-3.png" alt="background" class="news__img">
                         <span class="news__suptitle">фото дня</span>
-                        <h4 class="news__subtitle">Бизнес и немного удовольствия: Grand Hotel Lviv Luxury & SPA</h4>
+                        <h3 class="news__subtitle">Бизнес и немного удовольствия: Grand Hotel Lviv Luxury & SPA</h3>
                         </div>
                     <div class="news__item card__standart">
                         <div class="news__photo">
                             <img src="img/ukraine/img-4.png" alt="card__photo" class="news__img">
-                            <span class="news__suptitle">УКраина</span>
+                            <span class="news__suptitle">Украина</span>
                         </div>
                         <h3 class="news__title">Выход из карантина: Кабмин разрешил открыть кинотеатры со 2 июля</h3>
                         <span class="news__data">15:44</span>
@@ -412,7 +409,7 @@
                     <div class="news__item card__standart">
                         <div class="news__photo">
                             <img src="img/ukraine/img-6.png" alt="card__photo" class="news__img">
-                            <span class="news__suptitle">УКраина</span>
+                            <span class="news__suptitle">Украина</span>
                         </div>
                         <h3 class="news__title">Бетонная пята. Как застройщики превращают украинские города в ад</h3>
                         <span class="news__data">15:44</span>
@@ -420,7 +417,7 @@
                     <div class="news__item card__standart">
                         <div class="news__photo">
                             <img src="img/ukraine/img-5.png" alt="card__photo" class="news__img">
-                            <span class="news__suptitle">УКраина</span>
+                            <span class="news__suptitle">Украина</span>
                         </div>
                         <h3 class="news__title">Смерть марафонца. Можно ли было спасти Екатерину Катющеву</h3>
                         <span class="news__data">15:44</span>
@@ -434,14 +431,14 @@
         <div class="container">
             <div class="popular__inner">
                 <div class="popular__top">
-                    <h2 class="popular__header">СЕЙЧАС ПОПУЛЯРНО</h2>
+                    <h2 class="popular__header">Сейчас популярно</h2>
                 </div>
                 <div class="popular__bottom">
                     <div class="popular__swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="img/popular/img-1.png" alt="background" class="popular__bg">
-                                <span class="popular__suptitle">протесты в США</span>
+                                <span class="popular__suptitle">Протесты в США</span>
                                 <h3 class="popular__title">Жертвы собственной пропаганды. Как либеральные могут проиграть холодную войну</h3>
                                 <span class="popular__data">15:44</span>
                             </div>
@@ -457,7 +454,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <img src="img/popular/img-1.png" alt="background" class="popular__bg">
-                                <span class="popular__suptitle">протесты в США</span>
+                                <span class="popular__suptitle">Протесты в США</span>
                                 <h3 class="popular__title">Жертвы собственной пропаганды. Как либеральные могут проиграть холодную войну</h3>
                                 <span class="popular__data">15:44</span>
                             </div>
@@ -465,7 +462,6 @@
                         <div class="swiper-button-prev popular__prev"></div>
                         <div class="swiper-button-next popular__next"></div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -475,13 +471,13 @@
         <div class="container">
             <div class="country__inner">
                 <div class="country__top">
-                    <h2 class="country__header">красивая страна</h2>
+                    <h2 class="country__header">Красивая страна</h2>
                 </div>
                 <div class="country__bottom">
                     <div class="news__item card__standart">
                         <div class="news__photo">
                             <img src="img/country/img-1.png" alt="card_photo" class="news__img">
-                            <span class="news__suptitle">УКраина</span>
+                            <span class="news__suptitle">Украина</span>
                         </div>
                         <h3 class="news__title">Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом</h3>
                         <span class="news__data">15:44</span>
@@ -489,7 +485,7 @@
                     <div class="news__item card__standart">
                         <div class="news__photo">
                             <img src="img/country/img-2.png" alt="card_photo" class="news__img">
-                            <span class="news__suptitle">УКраина</span>
+                            <span class="news__suptitle">Украина</span>
                         </div>
                         <h3 class="news__title">Небоскребы советских времен. Три маршрута к памятникам советского модернизма в Киеве
                         </h3>
@@ -522,26 +518,26 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="img/focus_bg.png" alt="background" class="focus__bg">
-                            <span class="focus__suptitle">длинный фокус</span>
+                            <span class="focus__suptitle">Длинный фокус</span>
                             <div class="focus__text">
                                 <h3 class="focus__title">Ни тоски, ни жалости</h3>
-                                <h4 class="focus__subtitle">Почему украинки участвуют в боях без правил</h4>
+                                <p class="focus__subtitle">Почему украинки участвуют в боях без правил</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <img src="img/focus_bg.png" alt="background" class="focus__bg">
-                            <span class="focus__suptitle">длинный фокус</span>
+                            <span class="focus__suptitle">Длинный фокус</span>
                             <div class="focus__text">
                                 <h3 class="focus__title">Ни тоски, ни жалости</h3>
-                                <h4 class="focus__subtitle">Почему украинки участвуют в боях без правил</h4>
+                                <p class="focus__subtitle">Почему украинки участвуют в боях без правил</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <img src="img/focus_bg.png" alt="background" class="focus__bg">
-                            <span class="focus__suptitle">длинный фокус</span>
+                            <span class="focus__suptitle">Длинный фокус</span>
                             <div class="focus__text">
                                 <h3 class="focus__title">Ни тоски, ни жалости</h3>
-                                <h4 class="focus__subtitle">Почему украинки участвуют в боях без правил</h4>
+                                <p class="focus__subtitle">Почему украинки участвуют в боях без правил</p>
                             </div>
                         </div>
                     </div>
@@ -558,7 +554,7 @@
                 <div class="news__item card__small">
                     <div class="news__photo">
                         <img src="img/news/new-3.1.png" alt="card_photo" class="news__img">
-                        <span class="news__suptitle">спорт</span>
+                        <span class="news__suptitle">Спорт</span>
                     </div>
                     <h3 class="news__title">Финал Кубка Украины по футболу перенесут из Львова в Харьков, – СМИ</h3>
                     <span class="news__data">15:44</span>
@@ -578,18 +574,18 @@
                     <span class="news__data">15:44</span>
                 </div>
                 <div class="news__item card__market">
-                    <img src="img/news/new-3.2.png" alt="market" class="news__img">
+                    <a href="#"><img src="img/news/new-3.2.png" alt="market" class="news__img"></a>
                 </div>
                 <div class="news__item card__small">
                     <div class="news__photo">
                         <img src="img/news/new-3.3.png" alt="card_photo" class="news__img">
-                        <span class="news__suptitle">авто</span>
+                        <span class="news__suptitle">Авто</span>
                     </div>
                     <h3 class="news__title">Вдохновленные ностальгией. 3 лимитированные серии автомобилей, посвященные славному прошлому</h3>
                     <span class="news__data">15:44</span>
                 </div>
                 <div class="news__item card__market">
-                    <img src="img/news/new-3.4.png" alt="market" class="news__img">
+                    <a href="#"><img src="img/news/new-3.4.png" alt="market" class="news__img"></a>
                 </div>
                 <div class="news__item card__color">
                     <img src="img/news/new-3.5.png" alt="card_photo" class="news__img">
@@ -610,7 +606,7 @@
     <section class="market">
         <div class="container">
             <div class="market__inner">
-                <img src="img/market.png" alt="market" class="market__photo">
+                <a href="#"><img src="img/market.png" alt="market" class="market__photo"></a>
             </div>
         </div>
     </section>
@@ -621,27 +617,27 @@
     <div class="container">
         <div class="footer__inner">
             <div class="footer__logo">
-                <img src="img/footer/footer_logo.png" alt="logo" class="footer__icon">
+                <a href="#"><img src="img/footer/footer_logo.png" alt="logo" class="footer__icon"></a>
             </div>
             <div class="footer__top">
-                <div class="footer__nav">
-                    <li><a href="#" class="footer__link">ПОЛИТИКА</a></li>
-                    <li><a href="#" class="footer__link">УКРАИНА</a></li>
-                    <li><a href="#" class="footer__link">ЭКОНОМИКА</a></li>
-                    <li><a href="#" class="footer__link">культура</a></li>
-                    <li><a href="#" class="footer__link">Мнение</a></li>
-                    <li><a href="#" class="footer__link">рейтинги</a></li>
-                    <li><a href="#" class="footer__link">Длинный фокус</a></li>
-                    <li><a href="#" class="footer__link">МИР</a></li>
-                </div>
-                <div class="footer__subscribe">
-                    <div class="footer__photo">
-                        <img src="img/footer/photo-1.png" alt="photo" class="footer__img">
-                        <img src="img/footer/photo-2.png" alt="photo" class="footer__img">
-                        <img src="img/footer/photo-3.png" alt="photo" class="footer__img">
+                <ul class="footer__nav">
+                    <li class="footer__list"><a href="#" class="footer__link">Политика</a></li>
+                    <li class="footer__list"><a href="#" class="footer__link">Украина</a></li>
+                    <li class="footer__list"><a href="#" class="footer__link">Экономика</a></li>
+                    <li class="footer__list"><a href="#" class="footer__link">Культруа</a></li>
+                    <li class="footer__list"><a href="#" class="footer__link">Мнение</a></li>
+                    <li class="footer__list"><a href="#" class="footer__link">Рейтинги</a></li>
+                    <li class="footer__list"><a href="#" class="footer__link">Длинный фокус</a></li>
+                    <li class="footer__list"><a href="#" class="footer__link">Мир</a></li>
+                </ul>
+                <div class="footer-subscribe">
+                    <div class="footer__banner">
+                        <a class="footer__photo" href="#"><img src="img/footer/photo-1.png" alt="photo" class="footer__img"></a>
+                        <a class="footer__photo" href="#"><img src="img/footer/photo-2.png" alt="photo" class="footer__img"></a>
+                        <a class="footer__photo" href="#"><img src="img/footer/photo-3.png" alt="photo" class="footer__img"></a>
                     </div>
-                    <div class="footer__subscribe-text">
-                        <span class="footer__discount">Гарантировано получите скидку <span>-10%</span></span>
+                    <div class="footer-subscribe__text">
+                        <span class="footer__discount">Гарантировано получите скидку <span class="footer-discount__number">-10%</span></span>
                         <a href="#" class="subscribe__btn">Подписаться</a>
                     </div>
                 </div>
@@ -664,7 +660,7 @@
             </div>
             <div class="footer__copyright">
                 <span class="footer__info">© 2020 Фокус. Все права защищены.</span>
-                <a href="#">Політика конфіденційності</a>
+                <a class="footer__privacy" href="#">Політика конфіденційності</a>
             </div>
         </div>
     </div>

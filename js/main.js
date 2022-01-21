@@ -23,7 +23,7 @@ lang.forEach(function (item) {
 //Search
 const btnSearch = document.querySelector('.header__search')
 const headerFloat = document.querySelector('.header__inner')
-const inpSearch = document.querySelector('.header__input')
+const inpSearch = document.querySelector('.header__form')
 
 btnSearch.addEventListener('click',function () {
 	headerFloat.classList.toggle('active')
