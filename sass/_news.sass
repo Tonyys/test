@@ -51,6 +51,8 @@
         font-size: 20px
         font-weight: 500
         margin: -15px 0 25px 15px
+        &:hover
+          color: #ED3237
         @media (max-width: 768px)
           max-width: 210px
           font-size: 16px
@@ -61,7 +63,7 @@
         width: 100%
         height: 100%
       .news__suptitle
-        margin: 20px 0 105px 15px
+        margin: 20px 0 80px 15px
         background-color: white
         color: black
         @media (max-width: 768px)
@@ -70,6 +72,8 @@
         max-width: 240px
         margin: 0 0 10px 15px
         color: white
+        &:hover
+          color: #ED3237
         @media (max-width: 1024px)
           font-size: 18px
         @media (max-width: 768px)
@@ -85,7 +89,7 @@
       @media (max-width: 600px)
         height: 225px
       .news__photo
-        padding: 95px 0 0 15px
+        padding: 83px 0 0 15px
         @media (max-width: 768px)
           padding-top: 70px
       .news__img
@@ -221,6 +225,8 @@
         color: white
         font-size: 20px
         line-height: 1.1
+        &:hover
+          color: #ED3237
         @media (max-width: 1640px)
           font-size: 18px
         @media (max-width: 768px)
@@ -292,6 +298,10 @@
         color: white
         font-size: 24px
         font-weight: 700
+        text-decoration: none
+        transition-duration: .4s
+        &:hover
+          color: #ED3237
         @media (max-width: 768px)
           margin-bottom: 40px
         @media (max-width: 600px)
@@ -316,13 +326,18 @@
     max-width: 294px
     margin-top: 32px
     margin-bottom: 15px
+    color: black
     font-size: 20px
     font-weight: 500
     line-height: 1.2
+    text-decoration: none
     position: relative
     top: 0
     left: 0
     z-index: 2
+    transition-duration: .4s
+    &:hover
+      color: #ED3237
   &__data
     margin-top: auto
     margin-bottom: 10px
