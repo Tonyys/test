@@ -38,28 +38,25 @@ const lines = document.querySelectorAll('.intro__line')
 const intervalTime = 5000;
 tabBtn.forEach(function (tab,index) {
 
-
 	tab.addEventListener('click',function (item) {
 		counter = index;
 
-		if(!item.currentTarget.classList.contains('active')){
+		if(!item.currentTarget.classList.contains('js-active')){
 			clearInterval(interval);
 			interval = setInterval(slideChange , intervalTime);
 		}
 
-
 		tabBtn.forEach(function (item) {
-			item.classList.remove('active')
+			item.classList.remove('js-active')
 		})
 
-		tab.classList.add('active');
+		tab.classList.add('js-active');
 
 		tabContent.forEach(function (item) {
 			item.classList.remove('active')
 		})
 
 		tabContent[index].classList.add('active');
-
 	})
 })
 
@@ -75,9 +72,9 @@ function slideChange() {
 	})
 	tabContent[counter].classList.add('active')
 	tabBtn.forEach(function (item) {
-		item.classList.remove('active')
+		item.classList.remove('js-active')
 	})
-	tabBtn[counter].classList.add('active')
+	tabBtn[counter].classList.add('js-active')
 }
 
 let interval = setInterval(slideChange , intervalTime);
